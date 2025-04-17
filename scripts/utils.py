@@ -1,3 +1,7 @@
+# utils.py
+# contains reusable helper functions such as the metric scoring function
+# used to evaluate all models
+
 # define score function to print metrics
 def get_scores(y_true, preds, name):
     from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, roc_auc_score
