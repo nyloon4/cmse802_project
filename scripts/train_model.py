@@ -1,3 +1,7 @@
+# train_model.py
+# trains three models: logistic regression, xgboost, and weighted xgboost,
+# and makes predictions using the test set
+
 ### 🧠 step 4: Logistic regression  
 # train a baseline model using logistic regression
 # since data was scaled earlier, this should now run without any convergence warnings.
