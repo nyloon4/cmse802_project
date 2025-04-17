@@ -1,3 +1,7 @@
+# main.py
+# optional script that imports and runs the main components
+# of the project pipeline in order (preprocessing → training → evaluation)
+
 # main.py - runs the full model pipeline
 
 # load and preprocess data
