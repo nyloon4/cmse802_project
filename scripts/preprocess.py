@@ -1,3 +1,7 @@
+# preprocess.py
+# loads the dataset, encodes categorical columns, scales the features,
+# and splits the data into training and testing sets
+
 ## 🎯 PROJECT: Predicting Buyer Intent from Online Shopper Behavio
 # the goal of this project is to build a classification model that **predicts whether an online shopper will complete a purchase based on their session behavior.**
 #this helps businesses target potential buyers more effectively and avoid wasting ad spend on users who are unlikely to convert.
