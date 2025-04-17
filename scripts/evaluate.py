@@ -1,3 +1,8 @@
+# evaluate.py
+# evaluates the performance of all trained models using accuracy,
+# precision, recall, f1 score, and AUC. also generates visualizations
+# like confusion matrices, bar charts, and ROC curves
+
 ### 🧠 step 6: evaluate all 3 models  
 # we're comparing:  
 # 1. **logistic regression** – simple, interpretable  
