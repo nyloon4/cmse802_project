@@ -1,4 +1,4 @@
-# CMSE 890 Final Project: Predicting Online Shopper Conversions
+# Predicting Online Shopper Conversions
 
 ## project description  
 this project explores whether we can predict if someone will make a purchase based on how they behave during an online shopping session. using machine learning models like logistic regression, xgboost, and weighted xgboost, i trained and evaluated classifiers that try to answer the simple question: will this person buy or not?
