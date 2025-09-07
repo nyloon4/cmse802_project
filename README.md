@@ -10,29 +10,38 @@ I trained Logistic Regression and XGBoost with class weighting, prioritizing **r
 - Not included in this repo; place the file in `data/` before running
 
 ## Quickstart
-```bash
-pip install -r requirements.txt
-jupyter notebook "notebooks/buyer final project code.ipynb"
+To set up and run this project locally:
 
-Open the Jupyter notebook:
-jupyter notebook notebooks/buyer final project code.ipynb
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-In Jupyter, select Run All to reproduce training and evaluation.
+2. Open the Jupyter notebook:
+   ```bash
+   jupyter notebook "notebooks/buyer final project code.ipynb"
+   ```
+
+3. In Jupyter, select **Run All** to reproduce training and evaluation.
 
 ## Results (best model)
 
-| Model                 | Accuracy | Precision | Recall | F1   | ROC-AUC |
-|-----------------------|---------:|----------:|-------:|-----:|--------:|
-| Logistic Regression   | 0.883    | 0.764     | 0.356  | 0.486 | 0.668  |
-| XGBoost               | 0.889    | 0.670     | 0.563  | 0.612 | 0.756  |
-| XGBoost (Weighted)    | 0.878    | 0.595     | 0.675  | 0.632 | 0.795  |
+| Model               | Accuracy | Precision | Recall | F1   | ROC-AUC |
+|---------------------|---------:|----------:|-------:|-----:|--------:|
+| Logistic Regression | 0.883    | 0.764     | 0.356  | 0.486 | 0.668  |
+| XGBoost             | 0.889    | 0.670     | 0.563  | 0.612 | 0.756  |
+| XGBoost (Weighted)  | 0.878    | 0.595     | 0.675  | 0.632 | 0.795  |
 
-> **XGBoost (Weighted)** achieved the highest recall (0.675) and best balance across F1 and ROC-AUC, making it the preferred model given class imbalance.
+> **XGBoost (Weighted)** had the highest recall (0.675) and best F1 + ROC-AUC, making it the preferred model given class imbalance.
 
+## Key methods
+- Class weighting for imbalanced data  
+- Evaluation with Recall, F1, Accuracy, and ROC-AUC  
+- Confusion matrices in the notebook
 
-
-## Repo Structure  
-- **`data/`** → dataset (not committed)
-- **`scripts/`** → individual .py files 
-- **`notebooks/`** → jupyter notebook for modeling + analysis  
-- **`plots/`** → visual outputs used in presentation  
+## Repo structure
+- `notebooks/` – modeling & evaluation  
+- `scripts/` – reusable code (preprocessing, training)  
+- `plots/` – saved figures (optional)  
+- `data/` – (ignored, add your own data)  
+- `requirements.txt`
