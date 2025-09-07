@@ -37,5 +37,3 @@ In Jupyter, select Run All to reproduce training and evaluation.
 - **`scripts/`** → individual .py files 
 - **`notebooks/`** → jupyter notebook for modeling + analysis  
 - **`plots/`** → visual outputs used in presentation  
-- **`docs/`** → report writeup or slide materials  
-- **`models/`** → trained models (optional)
