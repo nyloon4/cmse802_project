@@ -7,14 +7,13 @@ I trained Logistic Regression and XGBoost with class weighting, prioritizing **r
 
 ## Dataset
 - Source: [UCI Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset)  
-- Not included in this repo; place dataset file(s) in `data/` before running
+- Not included in this repo; place the file in `data/` before running
 
 ## Quickstart
-To set up and run this project locally:
+```bash
+pip install -r requirements.txt
+jupyter notebook "notebooks/buyer final project code.ipynb"
 
-1. Clone the repo and install dependencies:
-   ```bash
-   pip install -r requirements.txt
 Open the Jupyter notebook:
 jupyter notebook notebooks/buyer final project code.ipynb
 
