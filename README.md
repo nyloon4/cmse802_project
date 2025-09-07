@@ -32,7 +32,7 @@ In Jupyter, select Run All to reproduce training and evaluation.
 
 
 
-## folder structure  
+## Repo Structure  
 - **`data/`** → dataset (not committed)
 - **`scripts/`** → individual .py files 
 - **`notebooks/`** → jupyter notebook for modeling + analysis  
