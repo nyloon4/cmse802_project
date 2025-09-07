@@ -1,14 +1,21 @@
 # Predicting Online Shopper Conversions
 
-## project description  
-this project explores whether we can predict if someone will make a purchase based on how they behave during an online shopping session. using machine learning models like logistic regression, xgboost, and weighted xgboost, i trained and evaluated classifiers that try to answer the simple question: will this person buy or not?
+This project predicts whether an online shopper will convert based on session-level behavior.  
+I trained Logistic Regression and XGBoost with class weighting, prioritizing **recall** to handle class imbalance.
 
-## objectives  
-- use session-level data to predict **purchase intent**  
-- test multiple classification models and compare performance  
-- handle class imbalance using **weighted modeling**  
-- evaluate model results with **recall, f1 score, and AUC**  
-- visualize confusion matrices, bar chart comparisons, and ROC curves
+**Tech stack:** Python · scikit-learn · XGBoost · NumPy · Pandas · Jupyter
+
+## Dataset
+- Source: [UCI Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset)  
+- Not included in this repo; place dataset file(s) in `data/` before running
+
+## Quickstart
+To set up and run this project locally:
+
+1. Clone the repo and install dependencies:
+   ```bash
+   pip install -r requirements.txt
+Open the Jupyter notebook:
 
 ## folder structure  
 - **`data/`** → dataset (not committed)
