@@ -16,10 +16,25 @@ To set up and run this project locally:
    ```bash
    pip install -r requirements.txt
 Open the Jupyter notebook:
+jupyter notebook notebooks/buyer final project code.ipynb
+
+In Jupyter, select Run All to reproduce training and evaluation.
+
+## Results (best model)
+
+| Model                 | Accuracy | Precision | Recall | F1   | ROC-AUC |
+|-----------------------|---------:|----------:|-------:|-----:|--------:|
+| Logistic Regression   | 0.883    | 0.764     | 0.356  | 0.486 | 0.668  |
+| XGBoost               | 0.889    | 0.670     | 0.563  | 0.612 | 0.756  |
+| XGBoost (Weighted)    | 0.878    | 0.595     | 0.675  | 0.632 | 0.795  |
+
+> **XGBoost (Weighted)** achieved the highest recall (0.675) and best balance across F1 and ROC-AUC, making it the preferred model given class imbalance.
+
+
 
 ## folder structure  
 - **`data/`** → dataset (not committed)
-- **`scipts/`** → individual .py files 
+- **`scripts/`** → individual .py files 
 - **`notebooks/`** → jupyter notebook for modeling + analysis  
 - **`plots/`** → visual outputs used in presentation  
 - **`docs/`** → report writeup or slide materials  
